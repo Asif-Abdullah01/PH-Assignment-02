@@ -12,10 +12,18 @@
 * {
     margin: 0;
     padding: 0;
+    /* color: white; */
+}
+
+header a {
     color: white;
 }
 
-.main-part{
+header {
+    color: white;
+}
+
+.main-part {
     background-color: black;
 }
 
@@ -57,6 +65,7 @@ header {
     font-style: italic;
     font-size: 2.25rem;
 }
+
 
 #home {
     padding: 8px 20px;
@@ -106,7 +115,30 @@ header {
     font-weight: 400;
     margin-right: 20px;
     margin-top: 10px;
+    color: white;
 
+}
+
+.change-your-habits {
+    color: white;
+}
+
+.run-extra {
+    color: white;
+}
+
+.bmi-calculator-intro {
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.bmi-left {
+    color: white;
+}
+
+.bmi-right h3 {
+    color: white;
 }
 
 #btn-2 {
@@ -226,63 +258,63 @@ header {
 
 /* -------------- */
 
-.habit-content{
+.habit-content {
     text-align: center;
     padding: 50px;
 }
 
-.habit-content h2{
+.habit-content h2 {
     font-size: 3rem;
 }
 
-.habit-content p{
+.habit-content p {
     color: rgba(255, 255, 255, 0.5);
     font-size: .9rem;
     font-weight: 400;
     margin-top: 20px;
 }
 
-.habit-images-section{
+.habit-images-section {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding-bottom: 100px;
 }
 
-.habit-images img{
+.habit-images img {
     border-radius: 50%;
 }
 
-.habit-images{
+.habit-images {
     text-align: center;
 }
 
-.habit-images h4{
+.habit-images h4 {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.habit-images p{
+.habit-images p {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     font-size: .9rem;
     font-weight: 400;
-    margin-top: 20px;   
+    margin-top: 20px;
 }
 
 
 
-.change-your-habits{
+.change-your-habits {
     width: 76%;
     margin: 0 auto;
 }
 
-.run-right img{
+.run-right img {
     width: 100%;
 }
 
-.run-extra{
+.run-extra {
     width: 76%;
     margin: 0 auto;
     display: flex;
@@ -293,40 +325,399 @@ header {
     padding: 50px;
 }
 
-.run-left h2{
+.run-left h2 {
     font-size: 3rem;
     font-weight: 900;
 }
 
-.run-left p{
+.run-left p {
     color: rgba(255, 255, 255, 0.5);
     font-size: .9rem;
     font-weight: 400;
-    margin-top: 20px;  
+    margin-top: 20px;
 }
-.run-right img{
+
+.run-right img {
     border-radius: 18px;
 }
 
-/* .run-left{
-    width: 50%;
+.bmi-calculator-intro {
+    text-align: left;
+    padding: 50px 0px;
+    margin-left: 450px;
 }
 
-.run-right{
-    width: 50%;
+.bmi-calculator-intro h2 {
+    font-size: 3rem;
 }
- */
+
+.bmi-calculator-intro p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .9rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+#calcu-btn {
+    padding: 10px 40px;
+    font-size: 1rem;
+}
+
+.bmi-calculator-main {
+    background: rgb(34, 34, 34);
+    padding: 50px;
+}
+
+.bmi-content {
+    width: 78%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
 
 
 
+.bmi-left h3,
+.bmi-right h3 {
+    font-size: 1.8rem;
+}
+
+.bmi-right p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .9rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid #777777;
+    padding: 15px;
+    text-align: left;
+}
+
+table td {
+    color: #777777;
+    font-weight: 400;
+    font-size: .9rem;
+
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+.bmi-left {
+    width: 45%;
+    margin-left: 100px;
+}
+
+.bmi-right {
+    width: 45%;
+}
+
+.form-div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.input-div {
+    width: 49%;
+}
+
+.input-div>input,
+select {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    width: 70%;
+    margin: 5px 0px;
+}
+
+.input-div>select {
+    width: 94%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#last-ta {
+    margin-top: 5px;
+    width: 193%;
+    margin-left: 3px;
+}
+
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.team {
+    color: white;
+    width: 76%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px;
+    /* background-color: red; */
+}
+
+.team-pic img {
+    height: 90%;
+}
+
+.team-pic img {
+    width: 100%;
+    /* height: 85%; */
+    border-radius: 18px;
+}
+
+.team-pic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    /* background-color: red; */
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1)
+}
+
+.team-content h3 {
+    font-size: 3rem;
+}
+
+.team-content p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .9rem;
+    font-weight: 400;
+    margin-top: 20px;
+
+    margin-bottom: 60px;
+}
+
+#det-left {
+    text-align: left;
+}
+
+.details {
+    position: relative;
+}
+
+
+.trainer-name {
+    position: absolute;
+    bottom: 60px;
+    left: 25px;
+}
+
+.trainer-name h4 {
+    font-size: 1.4rem;
+}
+
+.trainer-name p {
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+
+}
+
+
+.my-wish {
+    width: 76%;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    display: flex;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    border-radius: 18px;
+    background-color: rgba(244, 227, 233, 1);
+
+}
+
+.pic-and-name {
+    display: flex;
+    gap: 10px;
+
+}
+
+.pic-and-name img {
+    width: 59px;
+    height: 57px;
+    gap: 0px;
+    border-radius: 50%;
+
+}
+
+.pn-cont{
+    margin-top: 10px;
+}
+
+.wish-title{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-left: 100px;
+    color: black;
+}
+
+.wish-caption{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-left: 100px;
+    color: black;
+}
+
+.feedback-1 {
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 55%;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70%;
+    gap: 0px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.829);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.feedback-2 {
+    width: 80%;
+    height: 50%;
+    gap: 0px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.829);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.feedback-3 {
+    width: 70%;
+    height: 50%;
+    gap: 0px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.829);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    
+}
 
 
 
+.feedback-title{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.feedback-para{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.feedback{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.last-section{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.about-us{
+    padding-top: 50px;
+    color: white;
+    display: flex;
+    width: 78%;
+    margin: 0 auto;
+    /* padding: 50px 200px; */
+    /* background: rgba(255, 255, 255, 0.1); */
+    /* justify-content: space-around; */
+    align-items: center;
+    position: relative;
+    gap: 200px;
+
+}
+
+.fitness{
+    width: 48%;
+    padding-right: 100px;
+
+}
+
+.fitness h2{
+    font-size: 4.2rem;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(230, 83, 60);
+}
+
+.fitness p{
+   color: rgba(255, 255, 255, 0.5);
+   font-size: .9rem;
+   font-weight: 400;
+}
+
+.get-started{
+    width: 80%;
+    margin-top: 20px;
+}
+
+.get-parent{
+    display: flex;
+    gap: 20px;
+}
 
 
+.get-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
 
+.get-para{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 40px;
+}
 
+.get-left{
+    margin-right: 100px;
+}
 
+.line{
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    width: 50%;
+    position: absolute;
+    /* top: 100px; */
+    top: 4950px;
+    left: 400px;
+}
+
+.copyright{
+    /* color: white; */
+   /* color: rgba(255, 255, 255, 0.5); */
+   text-align: center;
+   padding: 40px;
+   color: white;
+   font-weight: 400;
+   padding-top: 90px;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -407,7 +798,7 @@ header {
         color: rgba(255, 255, 255, 0.65);
         padding-bottom: 5px;
         text-align: right;
-        
+
 
     }
 
