@@ -82,6 +82,12 @@ header {
     display: flex;
 }
 
+#run-btn {
+    margin-top: 25px;
+    font-size: 1rem;
+    padding: 18px 70px;
+}
+
 
 /* ------------------- */
 
@@ -310,6 +316,41 @@ header {
     margin: 0 auto;
 }
 
+
+
+@media screen and (max-width:576px) {
+    .habit-images-section {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-bottom: 100px;
+    }
+
+    .habit-content {
+        /* text-align: center; */
+        padding: 50px 0px;
+    }
+
+    .habit-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .habit-content p {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: .9rem;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
 .run-right img {
     width: 100%;
 }
@@ -335,11 +376,42 @@ header {
     font-size: .9rem;
     font-weight: 400;
     margin-top: 20px;
+    /* padding-bottom: 100px; */
 }
 
 .run-right img {
     border-radius: 18px;
 }
+
+
+
+@media screen and (max-width:576px) {
+    .run-extra {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-bottom: 50px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .run-left {
+        text-align: left;
+        padding: 10px;
+    }
+
+    #run-btn {
+        margin-top: 25px;
+        font-size: 1rem;
+        padding: 15px 100px;
+    }
+
+}
+
+
+
+
+
 
 .bmi-calculator-intro {
     text-align: left;
@@ -362,6 +434,7 @@ header {
     padding: 10px 40px;
     font-size: 1rem;
 }
+
 
 .bmi-calculator-main {
     background: rgb(34, 34, 34);
@@ -455,6 +528,84 @@ input::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
 
+
+@media screen and (max-width:576px) {
+    .bmi-calculator-intro {
+        text-align: left;
+        padding: 50px 0px;
+        margin-left: 30px;
+    }
+
+    .bmi-content {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .bmi-right {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        gap: 0px;
+    }
+
+    .bmi-left {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .bmi-calculator-main {
+        padding-left: 0px;
+    }
+
+    .bmi-left h3 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .bmi-right h3 {
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+
+    table,
+    th,
+    td {
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+
+    .input-div>input,
+    select {
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 12px 40px 12px 20px;
+        width: 60%;
+        margin: 5px 0px;
+    }
+
+    .form-div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 128%;
+        margin-top: 15px;
+    }
+
+    #last-ta {
+        margin-top: 5px;
+        width: 246%;
+        margin-left: 3px;
+    }
+
+    #calcu-btn {
+        padding: 15px 50px;
+        font-size: 1.2rem;
+    }
+}
+
+
+
 .team {
     color: white;
     width: 76%;
@@ -510,8 +661,8 @@ input::placeholder {
 
 .trainer-name {
     position: absolute;
-    bottom: 60px;
-    left: 25px;
+    bottom: 40px;
+    left: 20px;
 }
 
 .trainer-name h4 {
@@ -526,7 +677,42 @@ input::placeholder {
 }
 
 
+
+
+@media screen and (max-width:576px) {
+    #hide-pic{
+        display: none;
+    }
+    .team-pic {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 20px;
+        /* background-color: red; */
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .team {
+        padding: 20px 0px;
+
+    }
+
+    .team-content h3 {
+        font-size: 2.3rem;
+        margin-top: 20px;
+    }
+
+    .team-content p {
+
+        margin-bottom: 40px;
+    }
+
+
+}
+
+
 .my-wish {
+
     width: 76%;
     margin: 0 auto;
     color: rgb(255, 255, 255);
@@ -535,6 +721,7 @@ input::placeholder {
     padding-bottom: 130px;
     border-radius: 18px;
     background-color: rgba(244, 227, 233, 1);
+    padding-left: 50px;
 
 }
 
@@ -552,18 +739,18 @@ input::placeholder {
 
 }
 
-.pn-cont{
+.pn-cont {
     margin-top: 10px;
 }
 
-.wish-title{
+.wish-title {
     font-size: 3rem;
     font-weight: 600;
     margin-left: 100px;
     color: black;
 }
 
-.wish-caption{
+.wish-caption {
     font-size: 1.2rem;
     font-weight: 400;
     margin-left: 100px;
@@ -572,8 +759,8 @@ input::placeholder {
 
 .feedback-1 {
     margin-top: 50px;
-    margin-left: 150px;
-    width: 55%;
+    margin-left: 50px;
+    width: 70%;
     padding-left: 20px;
     padding-right: 20px;
     height: 70%;
@@ -615,31 +802,89 @@ input::placeholder {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
+
+}
+
+
+
+.feedback-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.feedback-para {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.feedback {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.last-section {
+    background-color: rgb(34, 34, 34);
+}
+
+@media screen and (max-width:576px) {
+    .my-wish {
+        flex-direction: column;
+
+        /* color: rgb(255, 255, 255); */
+        /* display: flex; */
+        padding-top: 30px;
+        padding-bottom: 50px;
+        border-radius: 18px;
+        /* background-color: rgba(244, 227, 233, 1); */
+
+    }
+
+    .wish-title {
+        font-size: 2rem;
+        margin-left: 9px;
+        text-align: center;
+        /* color: black; */
+    }
+
+    .wish-caption {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-left: 10px;
+        text-align: center;
+        margin-top: 10px;
+        /* color: black; */
+    }
+
+    .feedback-1 {
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .feedback-2 {
+        width: 70%;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .feedback-3 {
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
     
 }
 
 
 
-.feedback-title{
-    font-size: 2.5rem;
-    font-weight: 600;
-}
-
-.feedback-para{
-    font-weight: 400;
-    font-size: 1.2rem;
-}
-
-.feedback{
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
-
-.last-section{
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.about-us{
+.about-us {
     padding-top: 50px;
     color: white;
     display: flex;
@@ -654,69 +899,127 @@ input::placeholder {
 
 }
 
-.fitness{
+.fitness {
     width: 48%;
     padding-right: 100px;
 
 }
 
-.fitness h2{
+.fitness h2 {
     font-size: 4.2rem;
     font-weight: 800;
     font-style: italic;
     color: rgb(230, 83, 60);
 }
 
-.fitness p{
-   color: rgba(255, 255, 255, 0.5);
-   font-size: .9rem;
-   font-weight: 400;
+.fitness p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .9rem;
+    font-weight: 400;
 }
 
-.get-started{
+.get-started {
     width: 80%;
     margin-top: 20px;
 }
 
-.get-parent{
+.get-parent {
     display: flex;
     gap: 20px;
 }
 
 
-.get-title{
+.get-title {
     font-size: 2rem;
     font-weight: 700;
 }
 
-.get-para{
+.get-para {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     font-weight: 400;
     line-height: 40px;
 }
 
-.get-left{
+.get-left {
     margin-right: 100px;
 }
 
-.line{
+.line {
     border-top: 2px solid rgba(255, 255, 255, 0.1);
     width: 50%;
     position: absolute;
     /* top: 100px; */
     top: 4950px;
     left: 400px;
+    /* border: 2px solid red; */
 }
 
-.copyright{
+.copyright {
     /* color: white; */
-   /* color: rgba(255, 255, 255, 0.5); */
-   text-align: center;
-   padding: 40px;
-   color: white;
-   font-weight: 400;
-   padding-top: 90px;
+    /* color: rgba(255, 255, 255, 0.5); */
+    text-align: center;
+    padding: 40px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    padding-top: 90px;
+}
+
+
+@media screen and (max-width:576px) {
+
+    .about-us, .get-parent {
+        /* padding-top: 50px; */
+        /* color: white; */
+        flex-direction: column;
+        width: 100%;
+        /* margin: 0 auto; */
+        padding: 40px 0px;
+        /* background: rgba(255, 255, 255, 0.1); */
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        position: relative;
+        gap: 0px;
+    }
+
+    .fitness {
+        width: 75%;
+        padding-right: 20px;
+    }
+
+    .fitness p {
+        font-weight: 300;
+        line-height: 25px;
+        margin-top: 16px;
+    }
+
+    .line {
+        /* border-top: 2px solid rgb(255 0 0); */
+        width: 90%;
+        position: absolute;
+        /* top: 100px; */
+        /* color: red; */
+        top: 8170px;
+        left: 20px;
+    }
+
+    .get-started {
+        width: 80%;
+        margin-top: 0px;
+    }
+
+    .get-left {
+        margin-bottom: 20px;
+    }
+
+    .get-title {
+        margin-bottom: 20px;
+    }
+    .copyright {
+        padding-top: 20px;
+    }
+
+
 }
 
 
@@ -752,6 +1055,7 @@ input::placeholder {
         top: 80px;
         padding: 15px 15px;
         text-align: left;
+        margin-left: 15px;
 
     }
 
@@ -789,7 +1093,7 @@ input::placeholder {
         line-height: 20px;
         font-weight: 900;
         margin-top: 30px;
-        margin-left: 10px
+        margin-left: 19px;
     }
 
     .btn-secondary2 p {
@@ -833,8 +1137,22 @@ input::placeholder {
 
 
     .head-title {
-        font-size: 4rem;
+        margin-top: -30px;
+        font-size: 3rem;
     }
+
+    .shape {
+        font-size: 7rem;
+        font-weight: 100;
+        line-height: 10%;
+        font-family: 'Miama', sans-serif;
+        padding-right: 10px;
+    }
+
+    .bmi-calculator-intro h2 {
+        font-size: 2.5rem;
+    }
+
 
 
 }
