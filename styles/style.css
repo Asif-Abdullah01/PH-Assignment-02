@@ -1013,6 +1013,10 @@ input::placeholder {
         margin-top: 0px;
     }
 
+    #weight{
+        width: 51%;
+    }
+
     .get-left {
         margin-bottom: 20px;
     }
