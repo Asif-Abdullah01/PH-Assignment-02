@@ -9,6 +9,10 @@
     font-style: normal;
 }
 
+button{
+    cursor: pointer;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -836,6 +840,7 @@ input::placeholder {
         padding-bottom: 50px;
         border-radius: 18px;
         /* background-color: rgba(244, 227, 233, 1); */
+        padding-left: 15px;
 
     }
 
@@ -1030,6 +1035,7 @@ input::placeholder {
 
     .hamburger {
         display: block;
+        cursor: pointer;
 
     }
 
